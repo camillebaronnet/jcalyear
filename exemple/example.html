@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>jCalYear - Exemple</title>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Include librairie -->
+	<script src="../js/jquery.jcalyear.js"></script>
+
+</head>
+<body>
+
+	<div id="calendar"></div>
+	<script>
+	$(function(){
+
+		myCalendar = $('#calendar').yearCalendar({
+			startMounth : 3,
+			endMounth   : 11
+		});
+
+		myCalendar.addAgenda({
+			content     : 'Event 1',
+			dateStart   : '2014-05-03',
+		});
+
+		myCalendar.addAgenda({
+			content     : 'Event 2',
+			dateStart   : '2014-06-28',
+			dateEnd     : '2014-07-15'
+		});
+
+	});
+	</script>
+
+	<style>
+
+
+	</style>
+
+</body>
+</html>

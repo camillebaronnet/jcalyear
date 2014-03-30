@@ -1,0 +1,32 @@
+table{
+	width:100%;
+	border-collapse: collapse;
+}
+thead{
+	color: rgb(76, 79, 85);
+	text-align: center;
+}
+tbody, td{
+	border: 1px solid #ddd;
+}
+tbody td{
+	border-bottom: 1px dotted #ddd;
+	border-top: 1px dotted #ddd;
+}
+
+.exCalendar-label, .exCalendar-day{
+	width:0.78%;
+	text-align: center;
+}
+.exCalendar-content{
+	width:6.78%;
+}
+td div{
+	border: 1px solid #3a87ad;
+	background-color: #3a87ad;
+	color: #fff;
+	font-size: .85em;
+	border-radius: 3px;
+	cursor: default;
+	margin-bottom: 1px;
+}

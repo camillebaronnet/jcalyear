@@ -65,14 +65,14 @@ $.fn.yearCalendar = function(params){
 	// Defaults parameters
 	var params = $.extend({
 
-		mounthLabel : [ "Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juin", 
+		monthLabel  : [ "Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juin", 
 						"Juillet", "Août", "Septembre", "Octobre", "Novembre", 
 						"Décembre" ] ,
 		dayLabel    : [ "Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi" ],
 
-		year  : date.getFullYear(),
-		startMounth : 1,
-		endMounth   : 12
+		year        : date.getFullYear(),
+		startMonth  : 1,
+		endMonth    : 12
 	}, params);
 
 	// Set current year value
@@ -90,9 +90,9 @@ $.fn.yearCalendar = function(params){
 	var headerTable = table.find('thead tr');
 	var headerBody  =  table.find('tbody');
 
-	// Mounth boucle head
-	for (var iMounth = params.startMounth; iMounth <= params.endMounth; iMounth++) {
-		headerTable.append( '<td width="'+(100/(params.endMounth+1-params.startMounth))+'%" class="exCalendar-mouthhead" colspan=\"3\">'+params.mounthLabel[iMounth-1]+"</td>" );
+	// Month boucle head
+	for (var iMonth = params.startMonth; iMonth <= params.endMonth; iMonth++) {
+		headerTable.append( '<td width="'+(100/(params.endMonth+1-params.startMonth))+'%" class="exCalendar-mouthhead" colspan=\"3\">'+params.monthLabel[iMonth-1]+"</td>" );
 	};
 
 	for (var i = 1; i <= 31; i++) {
@@ -100,16 +100,16 @@ $.fn.yearCalendar = function(params){
 		var currentDay = $("<tr data-days=\""+i+"\"></tr>");
 		headerBody.append( currentDay );
 
-		// Mounth boucle body
-		for (var iMounth = params.startMounth; iMounth <= params.endMounth; iMounth++) {
+		// Month boucle body
+		for (var iMonth = params.startMonth; iMonth <= params.endMonth; iMonth++) {
 
-			$nbDays = new Date(params.year, iMounth, 0).getDate();
+			$nbDays = new Date(params.year, iMonth, 0).getDate();
 
 			if ($nbDays >= i){
 
 				var currentTime = i;
 
-				$keyDate           = new Date(params.year, iMounth-1, currentTime, 12);
+				$keyDate           = new Date(params.year, iMonth-1, currentTime, 12);
 				trace              = $keyDate.getDate();
 				trace = '';
 				var currentDayKey  = params.dayLabel[$keyDate.getDay()];

@@ -1,0 +1,27 @@
+{
+  "name": "jcalyear",
+  "version": "1.0.2",
+  "homepage": "https://github.com/camillebaronnet/jcalyear",
+  "description": "Annual calendar view and event with jQuery",
+  "main": "js/jquery.jcalyear.js",
+  "keywords": [
+    "jquery",
+    "calendar",
+    "event",
+    "year"
+  ],
+  "authors": [
+    "Camille Baronnet <bower@camillebaronnet.fr>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.8.3"
+  }
+}

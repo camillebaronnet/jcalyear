@@ -17,17 +17,18 @@
 	<script>
 	$(function(){
 
-		myCalendar = $('#calendar').yearCalendar();
+		var myCalendar  = $('#calendar').yearCalendar();
+		var currentYear = new Date().getFullYear();
 
 		myCalendar.addAgenda({
 			content     : 'Event 1',
-			dateStart   : '2014-05-03',
+			dateStart   : currentYear+'-05-03',
 		});
 
 		myCalendar.addAgenda({
 			content     : 'Event 2',
-			dateStart   : '2014-06-28',
-			dateEnd     : '2014-07-15'
+			dateStart   : currentYear+'-06-28',
+			dateEnd     : currentYear+'-07-15'
 		});
 
 	});

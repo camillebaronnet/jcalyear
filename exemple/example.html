@@ -7,24 +7,29 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<link rel="stylesheet" href="style.css">
 
-	<!-- Include librairie -->
+	<!-- Include library -->
 	<script src="../js/jquery.jcalyear.js"></script>
 
 </head>
 <body>
 
 	<div id="calendar"></div>
+	
 	<script>
 	$(function(){
 
-		var myCalendar  = $('#calendar').yearCalendar();
 		var currentYear = new Date().getFullYear();
 
+		// Create new instance of yearCalendar
+		var myCalendar  = $('#calendar').yearCalendar();
+
+		// Add an event like this
 		myCalendar.addAgenda({
 			content     : 'Event 1',
 			dateStart   : currentYear+'-05-03',
 		});
 
+		// Add an another event like this
 		myCalendar.addAgenda({
 			content     : 'Event 2',
 			dateStart   : currentYear+'-06-28',
@@ -33,11 +38,6 @@
 
 	});
 	</script>
-
-	<style>
-
-
-	</style>
 
 </body>
 </html>

@@ -1,0 +1,6 @@
+{
+  "name": "Jcalyear",
+  "tagline": "Annual calendar with jQuery",
+  "body": "jCalYear\r\n========\r\n\r\nAnnual calendar with jQuery\r\n\r\n##How to use\r\n\r\nStart by creating an HTML container\r\n\r\n```html\r\n<div id=\"calendar\"></div>\r\n```\r\nAnd load the calendar as follows\r\n\r\n```javascript\r\n$('#calendar').yearCalendar();\r\n```\r\n\r\n##Available options\r\n\r\n| Option name | Values             | Default                       | Description                      |\r\n| ----------- |:------------------:|:-----------------------------:| --------------------------------:|\r\n| year        | (int)              | Current year                  | Set year for calendar display    |\r\n| startMonth  | (int) between 1-12 | 1                             | Start month for calendar display |\r\n| endMonth    | (int) between 1-12 | 1                             | Start month for calendar display |\r\n| monthLabel  | (Array)            | [ \"Janvier\", ... ]            | Label for calendar header        |\r\n| dayLabel    | (Array)            | [ \"Dimanche\", \"Lundi\", ... ]  | Label for calendar days          |",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}

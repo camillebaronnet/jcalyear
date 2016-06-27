@@ -1,9 +1,10 @@
-jCalYear
-========
+# jCalYear
 
 Annual calendar with jQuery
 
-##How to use
+Online Demo : http://camillebaronnet.github.io/jcalyear/demo/
+
+## How to use
 
 Start by creating an HTML container
 
@@ -16,7 +17,7 @@ And load the calendar as follows
 $('#calendar').yearCalendar();
 ```
 
-##Available options
+## Available options
 
 | Option name | Values             | Default                       | Description                      |
 | ----------- |:------------------:|:-----------------------------:| --------------------------------:|
